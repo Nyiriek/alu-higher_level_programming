@@ -1,1 +1,1 @@
-Add 101-remove_char_at.py
+Add 102-magic_calculation.py

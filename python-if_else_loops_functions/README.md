@@ -1,1 +1,1 @@
-Add 12-fizzbuzz.py
+Add 100-print_tebahpla.py

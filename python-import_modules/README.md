@@ -1,1 +1,1 @@
-Add infinite addition
+Add program that imports a module

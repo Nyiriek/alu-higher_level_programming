@@ -1,1 +1,1 @@
-Add program that imports a module
+Add program that imports the module

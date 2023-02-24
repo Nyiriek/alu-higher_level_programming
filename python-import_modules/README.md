@@ -1,1 +1,1 @@
-Add program that imports the module
+Add a program that imports all functions from a file

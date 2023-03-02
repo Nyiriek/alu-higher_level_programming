@@ -1,1 +1,1 @@
-Add a function that replaces an element
+Add a function that print a list of integers in reverse

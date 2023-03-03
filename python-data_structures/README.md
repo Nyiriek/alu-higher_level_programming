@@ -1,1 +1,1 @@
-Add a function that print a list of integers in reverse
+Add a function used to replace in a copy

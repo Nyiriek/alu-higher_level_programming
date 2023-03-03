@@ -1,1 +1,1 @@
-Add can you C me now
+Add a function that prints a matrix of integers

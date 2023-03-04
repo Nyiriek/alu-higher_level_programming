@@ -1,1 +1,1 @@
-Add a function that returns a tuple
+Add a function that finds the max integer

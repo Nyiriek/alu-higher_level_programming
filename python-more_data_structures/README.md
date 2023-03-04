@@ -1,1 +1,1 @@
-Add a function that replaces all occurrences of an element by another in a new list
+Add a function that adds all unique integers in a list

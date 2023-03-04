@@ -1,1 +1,1 @@
-Add a function that computes the square valuse Of all integers in a matrix
+Add a function that computes the square value Of all integers in a matrix

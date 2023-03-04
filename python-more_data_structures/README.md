@@ -1,1 +1,1 @@
-Add a function that returns the number of keys in a dictionary
+Add a function that prints a dictionary by ordered keys

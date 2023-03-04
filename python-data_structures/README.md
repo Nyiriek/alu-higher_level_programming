@@ -1,1 +1,1 @@
-Add a function that adds 2 tuples
+Add a function that returns a tuple

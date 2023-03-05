@@ -1,1 +1,1 @@
-Add a function that returns a new dictionary with all values multiplied by 2
+Add a function that returns a key with the best score

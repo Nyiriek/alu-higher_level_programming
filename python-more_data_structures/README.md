@@ -1,1 +1,1 @@
-Add a function that prints a dictionary by ordered keys
+Add a function that updates dictionary

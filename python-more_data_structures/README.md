@@ -1,1 +1,1 @@
-Add a function that converts a Roman numeral to an integer
+Add a function that returns the weighted average of all integers

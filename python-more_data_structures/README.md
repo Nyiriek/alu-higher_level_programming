@@ -1,1 +1,1 @@
-Add a function that returns the weighted average of all integers
+Add a function that deletes by value in a dictionary

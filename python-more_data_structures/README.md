@@ -1,1 +1,1 @@
-Add a function that deletes keys with a specific value in a dictionary
+Add a function that computes the square value of all integers of a matrix using map

@@ -1,1 +1,1 @@
-Add a function that deletes by value in a dictionary
+Add a function that deletes keys with a specific value in a dictionary

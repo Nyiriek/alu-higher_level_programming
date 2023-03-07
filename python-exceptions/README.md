@@ -1,1 +1,1 @@
-Add print an count integers
+Print and count integers

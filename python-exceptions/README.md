@@ -1,1 +1,1 @@
-Add safe integer print with error message
+Add a function that executes a function safely

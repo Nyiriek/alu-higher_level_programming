@@ -1,1 +1,1 @@
-Add a function that executes a function safely
+Add a python function that does exactly the same

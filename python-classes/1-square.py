@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# This code writes a class Square that defines a square based on the initial square
+# This code writes a class Square that defines a square based on the initial
 
-"""Class Square that defines a square object.
-"""
+"""Class Square that defines a square object."""
 
 
 class Square:
@@ -11,7 +10,6 @@ class Square:
         """Initialize the square.
 
         Args:
-        size(int): Size of new square.
+            size(int): Size of new square.
         """
-        self.__size = size
-    
+        self.__size = size    

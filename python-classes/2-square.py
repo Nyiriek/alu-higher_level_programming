@@ -1,4 +1,4 @@
-#!/usr/pbin/python3
+#!/usr/bin/python3
 '''A class that defines a square by it's size.'''
 
 

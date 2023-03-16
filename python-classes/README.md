@@ -1,1 +1,1 @@
-Adding an empty class that defines a square
+Adding a square that raises errors according to size

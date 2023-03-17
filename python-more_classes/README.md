@@ -1,1 +1,1 @@
-A square in a rectangle
+Adding N queens

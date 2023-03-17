@@ -1,1 +1,1 @@
-Compare rectangles
+A square in a rectangle

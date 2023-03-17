@@ -1,1 +1,1 @@
-Adding an empty class Rectangle that defines a rectangle
+Adding real definition of a rectangle

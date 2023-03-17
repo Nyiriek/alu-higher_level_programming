@@ -1,1 +1,1 @@
-Add, how many instances?
+Add, detect instance deletion git add .

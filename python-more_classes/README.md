@@ -1,1 +1,1 @@
-Adding real definition of a rectangle
+Adding area and perimeter

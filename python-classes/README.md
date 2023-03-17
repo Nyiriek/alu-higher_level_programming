@@ -1,1 +1,1 @@
-Print square instance
+Compare 2 squares

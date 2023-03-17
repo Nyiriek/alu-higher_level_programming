@@ -1,1 +1,1 @@
-Adding a class that defines a square based on initial
+Add printing a square

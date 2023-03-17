@@ -1,1 +1,1 @@
-Adding a class that defines coordinates of a square
+Adding a class Node that defines a singly linked list

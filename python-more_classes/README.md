@@ -1,1 +1,1 @@
-Adding area and perimeter
+Adding string representation

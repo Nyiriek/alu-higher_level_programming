@@ -1,1 +1,1 @@
-Adding string representation
+Eval in magic

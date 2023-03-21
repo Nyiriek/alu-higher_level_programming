@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""
-This is a module that containts a clas that avoids
-dynmaically created attributes
-"""
+
+"""A class that avoids dynamically created attributes."""
 
 
 class LockedClass:
+    """Presents first name."""
     __slots__ = ['first_name']
 
-    def __init__(self):
-        """ Init method """
-        pass
-
+    def __setattr__(self, name, value):
+        if not hasattr(self, 'first_name') and name != 'first_name':
+            raise AttributeError("Cannot add new attribute to LockedClass except 'first_name'")
+            object.__setattr__(self, name, value)

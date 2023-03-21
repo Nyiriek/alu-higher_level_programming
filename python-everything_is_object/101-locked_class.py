@@ -9,5 +9,6 @@ class LockedClass:
 
     def __setattr__(self, name, value):
         if not hasattr(self, 'first_name') and name != 'first_name':
-            raise AttributeError("'LockedClass' object has no attribute 'last_name' and 'test'")
+            raise AttributeError("'LockedClass' object has no attribute 'last_name'")
+        except AttributeError("'LockedClass' object has no attribute 'test'")
             object.__setattr__(self, name, value)

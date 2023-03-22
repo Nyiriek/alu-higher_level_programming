@@ -1,1 +1,1 @@
-Same class or inherit from
+Only sub class

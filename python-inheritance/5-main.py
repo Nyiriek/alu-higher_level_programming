@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('5-base_geometry.py').BaseGeometry
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 bg =  BaseGeometry()
 

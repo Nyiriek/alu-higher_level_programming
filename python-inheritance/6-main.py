@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 BaesGeometry = __import__('6-base_geometry').BaseGeometry
 
-bg = BaseGeometry
+bg = BaseGeometry()
 
 try:
     print(bg.area())

@@ -1,4 +1,4 @@
-#!/bin/uuusr/python3
+#!/bin/usr/python3
 BaesGeometry = __import__('6-base_geometry').BaseGeometry
 
 bg = BaseGeometry

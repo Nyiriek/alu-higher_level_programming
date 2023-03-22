@@ -10,5 +10,5 @@ class LockedClass:
 
     def __setattr__(self, name, value):
         if name != 'first_name':
-            raise AttributeError(f"'LockedClass' object has no attribute 'name'")
+            raise AttributeError("'LockedClass' object has no attribute '{__name__}'")
         self.__dict__[name] = value

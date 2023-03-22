@@ -1,1 +1,1 @@
-My list
+Exact same object

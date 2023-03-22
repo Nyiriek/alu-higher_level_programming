@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Function that returns the list of avail. attributes and methods of an object."""
+"""Function that looks up."""
 
 
 def lookup(obj):

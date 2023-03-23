@@ -1,1 +1,1 @@
-Rectangle
+Integer validator

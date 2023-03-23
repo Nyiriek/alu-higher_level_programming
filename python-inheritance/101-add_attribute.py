@@ -2,12 +2,14 @@
 """Function that adds new attribute to object if possible."""
 
 
-def add_attribute(a_class, name, value):
-    """Adds new attribute to an object."""
+def add_attribute(obj, att, value):
+    """Adds new attribute to an object.
+    Args:
+        obj (any): Object to add attribute to.
+        att (str): Name of attribute to be added.
+        value (any): Value of attribute.
+    """
 
-    # Set for O(1) membership test
-    cannot_add = {int, str, float, list, dict tuple, frozenset,type,object}
-
-    if type(a_class) in cannot_add:
+    if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
-    a_class.__setattr__(name, value)
+    setattr(obj, att, value)

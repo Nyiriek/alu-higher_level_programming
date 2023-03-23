@@ -1,1 +1,1 @@
-Integer validator
+Full rectangle

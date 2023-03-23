@@ -1,1 +1,1 @@
-Full rectangle
+A class that inherits from

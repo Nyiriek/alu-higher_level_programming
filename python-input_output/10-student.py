@@ -11,14 +11,13 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Retrieves student dict. with filter conditions."""
-        if attrs == None or type(attrs) != list:
-            return self.__dict__
-        else:
-            temp = {}
-            for elem in attrs:
-                if type(elem) != str:
-                    return self.__dict__
-                if elem in self.__dict__.keys():
-                    temp(elem) = self.__dict__[elem]
-            return temp
+        """Retrieve student dict. representation.
+        Present only attributes included in the list if attrs\
+                is a list of strings.
+        Args:
+            attrs (list): Attributes to present(Optional).
+        """
+        if (type(attrs) == list and
+                all(type(elem) == str for elem in attrs)):
+            return {j: getattr(self, j) for j in attrs if hasattr(self, j)}
+        return (self.__dict__)

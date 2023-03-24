@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a class Student."""
+"""This module defines a class Student."""
 
 
 class Student:
@@ -16,9 +16,9 @@ class Student:
             return self.__dict__
         else:
             temp = {}
-            for ele in attrs:
-                if type(ele) != str:
+            for elem in attrs:
+                if type(elem) != str:
                     return self.__dict__
-                if ele in self.__dict__.keys():
-                    temp(ele) = self.__dict__[ele]
+                if elem in self.__dict__.keys():
+                    temp(elem) = self.__dict__[elem]
             return temp

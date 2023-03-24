@@ -4,7 +4,9 @@
 
 
 def pascal_triangel(n):
-    """Represents Pascal's triangle of size n."""
+    """Presents Pascal's triangle of size n.
+    Returns a list of lists of integers presenting the triangle.
+    """
     if n <= 0:
         return []
 

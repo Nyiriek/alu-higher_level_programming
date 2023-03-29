@@ -1,2 +1,5 @@
+-- Creates a table in current database
 -- Creates a table first_table in the current database in MySQL server
-CREATE DATABASE IF NOT EXISTS first_table (id INT, name VARCHAR(256));
+CREATE TABLE IF NOT EXISTS first_table (
+id INT,
+name VARCHAR(256));

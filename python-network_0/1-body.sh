@@ -1,3 +1,3 @@
 #!/bin/bash
 # A script that gets the body reponse for a given URL for 200 status code responses.
-curl -SL "$1"
+curl -sL "$1"

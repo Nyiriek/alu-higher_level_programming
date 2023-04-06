@@ -2,10 +2,11 @@
 """A script that
  fetches "https://alu-intranet.hbtn.io/status.
 """
-import urllib.request
 
 
 if __name__ == "__main__":
+    import urllib.request
+
     with urllib.request.urlopen("https://alu-intranet.hbtn.io/status") as response:
 	body = response.read()
 	print("Body response:")

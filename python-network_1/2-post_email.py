@@ -3,12 +3,9 @@
 Usage: ./2-post_email.py <URL> <email>
   - Displays the body of the response.
 """
-import argv from sys
-from urllib import request, parse
-
-
-if __name__ == "__main__":
-    post_email()
+from sys import argv
+import urllib.reques
+import urllib.parse
 
 
 def post_email():
@@ -21,3 +18,7 @@ def post_email():
     request = urllib.request.Request(url, data)
     with urllib.request.urlopen(request) as response:
         print(response.read().decode("utf-8"))
+
+
+if __name__ == "__main__":
+    post_email()

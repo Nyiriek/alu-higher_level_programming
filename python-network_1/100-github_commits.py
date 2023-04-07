@@ -1,21 +1,26 @@
 #!/usr/bin/python3
-"""Lists the 10 most recent commits on a given GitHub repository.
-Usage: ./100-github_commits.py <repository name> <repository owner>
+"""  script that lists 10 commits (from the most recent to oldest)
+     of the repository
 """
-import sys
 import requests
+from sys import argv
+
+
+def my_githubrails():
+    """list 10 commits (from the most recent to oldest) of the repository"""
+    url = "https://api.github.com/repos/{}/{}/commits"
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    username = argv[2]
+    repo = argv[1]
+    full_url = url.format(username, repo)
+    req = requests.get(full_url)
+    if req.status_code >= 400:
+        print("None")
+    else:
+        for i in req.json()[:10]:
+            print("{}: {}".format(i.get('sha'),
+                                  i.get('commit').get('author').get('name')))
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
-
-    r = requests.get(url)
-    commits = r.json()
-    try:
-        for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
-    except IndexError:
-        pass
+    my_githubrails()

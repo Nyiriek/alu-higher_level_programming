@@ -7,7 +7,7 @@ def add_integer(a, b=98):
     Args:
         a: first integer/float number
         b: second integer/float number with 98 as default
-    
+
     Raises:
         TypeError if a or b are not integers
     """

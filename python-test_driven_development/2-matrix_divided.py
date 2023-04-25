@@ -7,19 +7,15 @@ def matrix_divided(matrix, div):
     Args:
         matrix: list of lists
         div: number that divides a matrix
-
-    Raises:
-        TypeError if:
-            the elements of a matrix are not lists
-            the elements of the lists aren't integers or floats
-            div is not an integer or float
-            lists of the matrix don't have the same size
-
-        ZeroDivisionError if div is zero
     """
 
-    if not isinstance(matrix, (lists)):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not isinstance(matrix, (list)):
+        raise TypeError("matrix must be a matrix\
+                (list of lists) of integers/floats")
+    for row in matrix:
+        if type(row) != list:
+            raise TypeError("matrix must be a matrix\
+                    (list of lists) of integers/floats")
 
     common_size = len(matrix[0])
     for row in matrix:

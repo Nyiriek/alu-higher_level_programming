@@ -5,7 +5,7 @@ Import `say_my_name`
 >>> say_my_name("Nyiriek", "Peat")
 My name is Nyiriek Peat
 
->>> say_my_name2()
+>>> say_my_name(2)
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
@@ -15,4 +15,4 @@ TypeError: last_name must be a string
 
 >>> say_my_name()
 Traceback (most recent call last):
-TypeError: say_my_name() missing 1 required positinal argument:"first_name"
+TypeError: say_my_name() missing 1 required positinal argument:'first_name'

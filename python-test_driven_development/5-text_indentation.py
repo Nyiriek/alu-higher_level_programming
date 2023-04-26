@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Function that prints 2 new lines after .?: characterss"""
+"""Function that prints 2 new lines after .?: characters"""
 
 
 def text_indentation(text):
@@ -8,9 +8,9 @@ def text_indentation(text):
         text: input string
     """
     if type(text) != str:
-        raise TypeError("text must be a srting")
+        raise TypeError("text must be a string")
 
-    for d in in ".?:":
+    for d in ".?:":
         text = (d + "\n\n").join(
             [line.strip(" ") for line in text.split(d)])
 

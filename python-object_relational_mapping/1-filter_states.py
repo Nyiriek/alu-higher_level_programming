@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""A script that lists all states with names starting with N"""
+"""A script that lists all states starting with N"""
 import MySQLdb
 import sys
 
 
 def select_states():
-    """Lists all states with N"""
+    """Lists all states starting with N"""
     db = MySQLdb.connect(host="localhost", port=3306, user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3])
 

@@ -3,11 +3,12 @@
 import MySQLdb
 import sys
 
+
 def select_states():
     """Lists all states in the database"""
 
-    db = MySQLdb.connect(host="localhost", port=3306, usr=argv[1],
-            passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(host="localhost", port=3306, usr=sys.argv[1],
+            passwd=sys.argv[2], db=sys.argv[3])
 
     cur = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id")
@@ -17,6 +18,7 @@ def select_states():
         print(states)
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     select_states()

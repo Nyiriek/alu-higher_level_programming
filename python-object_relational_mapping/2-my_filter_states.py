@@ -11,7 +11,8 @@ def select_states():
                          port=3306, db=sys.argv[3])
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{:S}'\
+    cur.execute("SELECT * FROM states WHERE\
+            name LIKE BINARY '{:s}'\
             ORDER BY id".format(sys.argv[4]))
 
     states = cursor.fetchall()
@@ -20,6 +21,7 @@ def select_states():
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     select_states()

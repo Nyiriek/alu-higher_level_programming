@@ -21,5 +21,5 @@ def select_states():
     db.close()
 
 
-    if __name__ == "__main__":
-        select_states()
+if __name__ == "__main__":
+    select_states()

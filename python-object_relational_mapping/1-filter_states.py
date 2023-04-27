@@ -18,7 +18,7 @@ def select_states():
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states\
-        WHERE name LIK 'N%' ORDER BY id")
+        WHERE name LIKE 'N%' ORDER BY id")
 
     states = cur.fetchall()
     for states in states:

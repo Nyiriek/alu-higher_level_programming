@@ -14,7 +14,7 @@ def select_states():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE\
-            BINARY %s ORDER BY id", (argv[4]))
+            BINARY %s ORDER BY id", (sys.argv[4]))
 
     states = cur.fetchall()
     for states in states:

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """A script that takes in arguments and displays\
         its values in the database"""
-
 import MySQLdb
 import sys
 
@@ -14,7 +13,7 @@ def select_states():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE\
-            BINARY %s ORDER BY id", (sys.argv[4]))
+            %s ORDER BY id", (sys.argv[4],))
 
     states = cur.fetchall()
     for states in states:

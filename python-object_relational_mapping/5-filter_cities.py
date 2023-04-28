@@ -11,10 +11,10 @@ def my_safe_filter_states():
     db = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], port=3306, db=sys.argv[3])
     cur = db.cursor()
-    cur.execute( "SELECT cities.name FROM cities\
+    cur.execute("SELECT cities.name FROM cities\
             JOIN states ON cities.state_id = states.id\
             AND states.name = %s\
-            ORDER BY cities.id ASC", sys.argv[4],)
+            ORDER BY cities.id ASC", (sys.argv[4],))
 
     cities = cur.fetchall()
     cites = []

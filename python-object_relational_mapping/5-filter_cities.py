@@ -4,7 +4,7 @@ import MySQLdb
 import sys
 
 
-def vmy_safe_filter_states():
+def my_safe_filter_states():
     """Takes in the name of the state as an\
             argument and lists all cities"""
 

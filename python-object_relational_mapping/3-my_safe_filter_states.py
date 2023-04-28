@@ -8,7 +8,7 @@ import sys
 def select_states():
     """Displays the values of arguments in the database"""
 
-    db = MySQLdb.connect(host="localhost", user=sys.argv[1], 
+    db = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
 
     cur = db.cursor()
@@ -17,7 +17,7 @@ def select_states():
 
     states = cur.fetchall()
     for states in states:
-        prints(states)
+        print(states)
 
     cur.close()
     db.close()

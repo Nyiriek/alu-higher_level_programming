@@ -5,5 +5,5 @@ if (numberOfArguments < 3) {
 } else if (numberOfArguments === 3) {
   console.log('Argument found');
 } else {
-  console.log('Arguments found')
+  console.log('Arguments found');
 }

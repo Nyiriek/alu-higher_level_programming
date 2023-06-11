@@ -1,6 +1,8 @@
 #!/usr/bin/node
-function factorial(m) {
-  if (m === 0) {
+function factorial (m) {
+  if (isNaN(m)) {
+    return 1;
+  } else if (m === 0) {
     return 1;
   } else {
     return factorial(m - 1) * m;

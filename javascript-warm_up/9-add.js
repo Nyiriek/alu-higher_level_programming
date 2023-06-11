@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function add (a, b) {
-  const sum = integer(a) + integer(b);
+  const sum = parseInt(a) + parseInt(b);
   console.log(sum);
 }
 

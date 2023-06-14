@@ -5,7 +5,7 @@ class Square extends SquareP {
   charPrint (c) {
     const char = c || 'X';
     for (let m = 0; m < this.height; m++) {
-	 console.log(char.repeat(this.width));
+      console.log(char.repeat(this.width));
     }
   }
 }
